@@ -38,7 +38,7 @@ export class LaunchJsonCompletionProvider implements CompletionItemProvider {
         return [
             {
                 command: {
-                    command: 'debugpy.SelectAndInsertDebugConfiguration',
+                    command: 'debugpy-151.SelectAndInsertDebugConfiguration',
                     title: DebugConfigStrings.launchJsonCompletions.description,
                     arguments: [document, position, token],
                 },

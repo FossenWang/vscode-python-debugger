@@ -29,14 +29,14 @@ export function isUnitTestExecution(): boolean {
 }
 
 export namespace Commands {
-    export const Debug_In_Terminal = 'debugpy.debugInTerminal';
-    export const TriggerEnvironmentSelection = 'debugpy.triggerEnvSelection';
-    export const PickLocalProcess = 'debugpy.pickLocalProcess';
-    export const PickArguments = 'debugpy.pickArgs';
-    export const ViewOutput = 'debugpy.viewOutput';
-    export const ClearStorage = 'debugpy.clearCacheAndReload';
-    export const Enable_SourceMap_Support = 'debugpy.enableSourceMapSupport';
-    export const SelectDebugConfig = 'debugpy.SelectAndInsertDebugConfiguration';
+    export const Debug_In_Terminal = 'debugpy-151.debugInTerminal';
+    export const TriggerEnvironmentSelection = 'debugpy-151.triggerEnvSelection';
+    export const PickLocalProcess = 'debugpy-151.pickLocalProcess';
+    export const PickArguments = 'debugpy-151.pickArgs';
+    export const ViewOutput = 'debugpy-151.viewOutput';
+    export const ClearStorage = 'debugpy-151.clearCacheAndReload';
+    export const Enable_SourceMap_Support = 'debugpy-151.enableSourceMapSupport';
+    export const SelectDebugConfig = 'debugpy-151.SelectAndInsertDebugConfiguration';
     export const Set_Interpreter = 'python.setInterpreter';
 }
 

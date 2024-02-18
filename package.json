@@ -1,9 +1,9 @@
 {
-    "name": "debugpy",
-    "displayName": "Debugpy",
-    "description": "Python Debugger extension using `debugpy`.",
-    "version": "2023.1.0-dev",
-    "publisher": "ms-python",
+    "name": "debugpy-151",
+    "displayName": "Debugpy 1.5.1",
+    "description": "Python Debugger extension using version 1.5.1 `debugpy`.",
+    "version": "1.0.0-dev",
+    "publisher": "fossen",
     "license": "MIT",
     "homepage": "https://github.com/Microsoft/vscode-python-debugger",
     "repository": {
@@ -27,8 +27,8 @@
     ],
     "activationEvents": [
         "onDebugInitialConfigurations",
-        "onDebugDynamicConfigurations:debugpy",
-        "onDebugResolve:debugpy",
+        "onDebugDynamicConfigurations:debugpy-151",
+        "onDebugResolve:debugpy-151",
         "onLanguage:python"
     ],
     "main": "./dist/extension.js",
@@ -36,19 +36,19 @@
     "contributes": {
         "commands": [
             {
-                "category": "Debugpy",
-                "command": "debugpy.debugInTerminal",
+                "category": "Debugpy 1.5.1",
+                "command": "debugpy-151.debugInTerminal",
                 "icon": "$(debug-alt)",
                 "title": "%debugpy.command.debugInTerminal.title%"
             },
             {
-                "category": "Debugpy",
-                "command": "debugpy.clearCacheAndReload",
+                "category": "Debugpy 1.5.1",
+                "command": "debugpy-151.clearCacheAndReload",
                 "title": "%debugpy.command.clearCacheAndReload.title%"
             },
             {
-                "category": "Debugpy",
-                "command": "debugpy.viewOutput",
+                "category": "Debugpy 1.5.1",
+                "command": "debugpy-151.viewOutput",
                 "icon": {
                     "dark": "resources/dark/repl.svg",
                     "light": "resources/light/repl.svg"
@@ -59,19 +59,19 @@
         "menus": {
             "commandPalette": [
                 {
-                    "category": "Debugpy",
-                    "command": "debugpy.clearCacheAndReload",
+                    "category": "Debugpy 1.5.1",
+                    "command": "debugpy-151.clearCacheAndReload",
                     "title": "%debugpy.command.clearCacheAndReload.title%"
                 },
                 {
-                    "category": "Debugpy",
-                    "command": "debugpy.debugInTerminal",
+                    "category": "Debugpy 1.5.1",
+                    "command": "debugpy-151.debugInTerminal",
                     "icon": "$(debug-alt)",
                     "title": "%debugpy.command.debugInTerminal.title%"
                 },
                 {
-                    "category": "Debugpy",
-                    "command": "debugpy.viewOutput",
+                    "category": "Debugpy 1.5.1",
+                    "command": "debugpy-151.viewOutput",
                     "title": "%debugpy.command.viewOutput.title%"
                 }
             ]
@@ -419,14 +419,14 @@
                     }
                 },
                 "configurationSnippets": [],
-                "label": "Debugpy",
+                "label": "Debugpy 1.5.1",
                 "languages": [
                     "python"
                 ],
-                "type": "debugpy",
+                "type": "debugpy-151",
                 "variables": {
-                    "pickProcess": "debugpy.pickLocalProcess",
-                    "pickArgs": "debugpy.pickArgs"
+                    "pickProcess": "debugpy-151.pickLocalProcess",
+                    "pickArgs": "debugpy-151.pickArgs"
                 },
                 "when": "!virtualWorkspace && shellExecutionSupported"
             }
@@ -444,7 +444,7 @@
         "format-check": "prettier --check 'src/**/*.ts' 'build/**/*.yml' '.github/**/*.yml'",
         "format-fix": "prettier --write 'src/**/*.ts' 'build/**/*.yml' '.github/**/*.yml'",
         "test": "node ./out/test/runTest.js",
-        "vsce-package": "vsce package -o pyhton-debugger.vsix"
+        "vsce-package": "vsce package -o python-debugger.vsix"
     },
     "devDependencies": {
         "@types/chai": "^4.3.4",

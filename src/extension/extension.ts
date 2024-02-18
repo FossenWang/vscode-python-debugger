@@ -20,11 +20,11 @@ import { EventName } from './telemetry/constants';
 // your extension is activated the very first time the command is executed
 export async function activate(context: IExtensionContext): Promise<void> {
     // Setup logging
-    const outputChannel = createOutputChannel('Debugpy');
+    const outputChannel = createOutputChannel('Debugpy 1.5.1');
     context.subscriptions.push(outputChannel, registerLogger(outputChannel));
     context.subscriptions.push(registerCommand(Commands.ViewOutput, () => outputChannel.show()));
 
-    traceLog(`Name: Debugpy`);
+    traceLog(`Name: Debugpy 1.5.1`);
     traceLog(`Module: debugpy`);
 
     try {

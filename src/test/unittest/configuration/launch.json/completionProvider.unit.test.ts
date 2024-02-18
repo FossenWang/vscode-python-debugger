@@ -111,7 +111,7 @@ suite('Debugging - launch.json Completion Provider', () => {
 
         const expectedCompletionItem: CompletionItem = {
             command: {
-                command: 'debugpy.SelectAndInsertDebugConfiguration',
+                command: 'debugpy-151.SelectAndInsertDebugConfiguration',
                 title: DebugConfigStrings.launchJsonCompletions.description,
                 arguments: [document.object, position, token],
             },

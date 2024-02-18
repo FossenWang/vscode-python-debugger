@@ -81,7 +81,7 @@ function getSettingsUriAndTarget(resource: Uri | undefined): { uri: Uri | undefi
 }
 
 export async function updateSetting(
-    section: string = 'debugpy',
+    section: string = 'debugpy-151',
     setting: string,
     value?: unknown,
     resource?: Uri,
@@ -92,7 +92,7 @@ export async function updateSetting(
         target: configTarget || ConfigurationTarget.WorkspaceFolder,
     };
     let settingsInfo = defaultSetting;
-    if (section === 'debugpy' && configTarget !== ConfigurationTarget.Global) {
+    if (section === 'debugpy-151' && configTarget !== ConfigurationTarget.Global) {
         settingsInfo = getSettingsUriAndTarget(resource);
     }
 
